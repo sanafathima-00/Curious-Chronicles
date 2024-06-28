@@ -28,7 +28,7 @@ const numberFacts = async () => {
 const hpFacts = async () => {
     let response = await fetch("https://potterapi-fedeperin.vercel.app/en/spells/random");
     let data = await response.json();
-    const factText = "The spell " + data.spell + "is used to " + data.use;
+    const factText = "The spell " + data.spell + " is used to " + data.use;
     hpFactDisplay.innerText = factText;
 };
 
